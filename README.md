@@ -14,4 +14,4 @@ I eventually plan to extend the procedural texturing using noise algorithms, add
 
 Also some simple animations.
 
-![alt tag](https://raw.githubusercontent.com/username/hobby_pathtracer/source/images/diffuse_reflect_refract.png)
+![alt tag](https://raw.githubusercontent.com/cgyeager/hobby_pathtracer/source/images/diffuse_reflect_refract.png)
