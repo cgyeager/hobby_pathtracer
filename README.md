@@ -1,8 +1,10 @@
 # Hobby Path tracer
 
-Basic path tracer using montel carlo integration.
+Basic path tracer using Monte Carlo integration.
 
 Implemented several primitives, sphere, cylinder, disks, axis aligned bounding box
+
+Needs a proper sampler instead of just random numbers.
 
 Using bounding volume hierarchy for acceleration structure
 
