@@ -1,5 +1,5 @@
-#ifndef HITABLE_HPP
-#define HITABLE_HPP
+#ifndef GEOMETRIC_OBJECT_HPP
+#define GEOMETRIC_OBJECT_HPP
 
 #include "../Ray.hpp"
 #include "AABB.hpp"

@@ -1,5 +1,5 @@
-#ifndef HITABLE_LIST_HPP
-#define HITABLE_LIST_HPP
+#ifndef GEOMETRY_LIST_HPP
+#define GEOMETRY_LIST_HPP
 
 #include "GeometricObject.hpp"
 #include "AABB.hpp"
