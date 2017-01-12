@@ -1,4 +1,3 @@
-
 #include "geometry/GeometricObject.hpp"
 #include "geometry/GeometryList.hpp"
 #include "geometry/Sphere.hpp"
@@ -113,7 +112,8 @@ int main()
 
 	SavePPM("test.ppm", colorBuffer, nx, ny, GAMMA);
 
-	delete colorBuffer;
-
+    //	delete colorBuffer;
+	// just letting OS clean up resources initialized in main
+    // since they're used throughout the entire algorithm	
 	return 0;
 }
