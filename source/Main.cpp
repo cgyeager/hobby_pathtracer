@@ -20,6 +20,7 @@
 #include <cstdio>
 #include <ctime>
 #include <cstdlib>
+#include <vector>
 
 #define GAMMA false
 
@@ -50,7 +51,8 @@ Radiance(const Ray& ray, GeometricObject * world, const int depth)
 
 
 
-int main()
+int 
+main()
 {
 	srand(time(0));
 	int nx = 600;
@@ -71,20 +73,23 @@ int main()
 	
 	Camera camera(camSettings);
 	
-	GeometricObject * list[3];
+	std::vector<GeometricObject *> geometry;
+	std::vector<Texture *> textures;
+	std::vector<Material *> materials;
 	
-	Texture * checkered = new PlaneCheckers(new ConstantTexture(0.5f, 0.1f, 0.f), new ConstantTexture(0.9f, 0.9f, 0.9f));
-	Texture * sphereCheckers = new SphereCheckers(new ConstantTexture(0.1f, 0.1f, 0.25f), new ConstantTexture(0.9f, 0.9f, 0.9f));
-	list[0] = new Sphere(0.f, 0.5f, -1.f, 0.5f);
-	list[0]->SetMaterial(new Lambertian(sphereCheckers));
+	textures.push_back( new PlaneCheckers(glm::vec3(0.5f, 0.1f, 0.f), glm::vec3(0.9f, 0.9f, 0.9f)) );
+	textures.push_back( new SphereCheckers(glm::vec3(0.1f, 0.1f, 0.25f), glm::vec3(0.9f, 0.9f, 0.9f)) );
+	
+	materials.push_back( new Lambertian(textures[1]) );
+	materials.push_back( new Lambertian(glm::vec3(237.f / 255.f, 181.f / 255.f, 145.f / 255.f)) );
 
-	list[1] = new Plane;
-	list[1]->SetMaterial(new Lambertian(glm::vec3(237.f / 255.f, 181.f / 255.f, 145.f / 255.f)));//new Lambertian(new ConstantTexture(glm::vec3(237.f/255.f, 181.f/255.f, 145.f/255.f))));
+	geometry.push_back(new Sphere(0.f, 0.5f, -1.f, 0.5f));
+	geometry[0]->SetMaterial(materials[0]);
 
-	list[2] = new Disk(0.f, 15.f, -5.f, 0.f, 0.f, 1.f, 5.f);
-	list[2]->SetMaterial(new Metal(0.8f, 0.5f, 0.65f, 0.5f));
+	geometry.push_back(new Plane);
+	geometry[1]->SetMaterial(materials[1]);
 
-	GeometricObject * world = new GeometryList(list, sizeof(list)/sizeof(list[0]));
+	GeometricObject * world = new GeometryList(&geometry[0], geometry.size());
 	
 	for (int j = ny-1; j >= 0; j--)
 	{
@@ -112,8 +117,19 @@ int main()
 
 	SavePPM("test.ppm", colorBuffer, nx, ny, GAMMA);
 
-    //	delete colorBuffer;
-	// just letting OS clean up resources initialized in main
-    // since they're used throughout the entire algorithm	
+   	delete colorBuffer;
+	
+	for (int i = 0; i < geometry.size(); i++)
+		delete geometry[i];
+	
+	for (int i = 0; i < textures.size(); i++)
+		delete textures[i];
+
+	for (int i = 0; i < materials.size(); i++)
+		delete materials[i];
+
+	delete world;
+
+	
 	return 0;
 }

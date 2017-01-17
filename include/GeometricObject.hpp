@@ -22,6 +22,8 @@ class GeometricObject
 {
 public:
 
+	virtual ~GeometricObject() {}
+
 	virtual bool 
 	Hit(const Ray& ray, float tmin, float tmax, ShadeRecord& sr) const {};
 	

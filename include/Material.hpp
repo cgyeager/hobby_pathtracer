@@ -9,6 +9,8 @@ class Material
 {
 public:
 
+	virtual ~Material() {}
+
 	virtual bool
 	Scatter(
 		const Ray& rayIn, 

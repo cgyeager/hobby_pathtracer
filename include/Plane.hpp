@@ -21,6 +21,7 @@ public:
 		normal(n)
 	{}
 
+
 	virtual bool Hit(const Ray& ray, float tmin, float tmax, ShadeRecord& sr) const;
 	virtual bool BoundingBox(float t0, float t1, AABB& box) const;
 

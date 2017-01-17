@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/chris/Graphics/ptracer
 CMAKE_BINARY_DIR = /home/chris/Graphics/ptracer/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_exec.dir
+# Target rules for target CMakeFiles/pathtracer.dir
 
 # All Build rule for target.
-CMakeFiles/test_exec.dir/all:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/depend
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target test_exec"
-.PHONY : CMakeFiles/test_exec.dir/all
+CMakeFiles/pathtracer.dir/all:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/depend
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target pathtracer"
+.PHONY : CMakeFiles/pathtracer.dir/all
 
 # Include target in all.
-all: CMakeFiles/test_exec.dir/all
+all: CMakeFiles/pathtracer.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_exec.dir/rule: cmake_check_build_system
+CMakeFiles/pathtracer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/Graphics/ptracer/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_exec.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pathtracer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/Graphics/ptracer/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_exec.dir/rule
+.PHONY : CMakeFiles/pathtracer.dir/rule
 
 # Convenience name for target.
-test_exec: CMakeFiles/test_exec.dir/rule
+pathtracer: CMakeFiles/pathtracer.dir/rule
 
-.PHONY : test_exec
-
-# clean rule for target.
-CMakeFiles/test_exec.dir/clean:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/clean
-.PHONY : CMakeFiles/test_exec.dir/clean
+.PHONY : pathtracer
 
 # clean rule for target.
-clean: CMakeFiles/test_exec.dir/clean
+CMakeFiles/pathtracer.dir/clean:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/clean
+.PHONY : CMakeFiles/pathtracer.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pathtracer.dir/clean
 
 .PHONY : clean
 

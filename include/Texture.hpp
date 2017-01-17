@@ -43,12 +43,22 @@ private:
 class SphereCheckers: public Texture
 {
 public:
-	SphereCheckers() {}
-	SphereCheckers(Texture * t0, Texture * t1)
-		:
-		even(t0),
-		odd(t1)
+	SphereCheckers() 
+	
 	{}
+	SphereCheckers(glm::vec3 e, glm::vec3 o)
+		:
+		even(new ConstantTexture(e.r, e.g, e.b)),
+		odd(new ConstantTexture(o.r, o.g, o.b))
+	{}
+	
+	~SphereCheckers()
+	{
+		if (odd)
+			delete odd;
+		if (even)
+			delete even;
+	}
 	
 	virtual glm::vec3
 		Value(float u, float v, const glm::vec3& p) const;
@@ -65,11 +75,19 @@ class PlaneCheckers : public Texture
 {
 public:
 	PlaneCheckers() {}
-	PlaneCheckers(Texture * t0, Texture * t1)
+	PlaneCheckers(glm::vec3 e, glm::vec3 o)
 		:
-		even(t0),
-		odd(t1)
+		even(new ConstantTexture(e.r, e.g, e.b)),
+		odd(new ConstantTexture(o.r, o.g, o.b))
 	{}
+
+	~PlaneCheckers()
+	{
+		if (odd)
+			delete odd;
+		if (even)
+			delete even;
+	}
 	
 	virtual glm::vec3
 		Value(float u, float v, const glm::vec3& p) const;

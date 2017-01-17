@@ -5,4 +5,4 @@ include_directories(include)
 
 file(GLOB SOURCES "source/*cpp")
 
-add_executable(test_exec ${SOURCES})
+add_executable(pathtracer ${SOURCES})

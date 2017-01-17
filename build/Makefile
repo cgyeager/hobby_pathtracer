@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_exec
+# Target rules for targets named pathtracer
 
 # Build rule for target.
-test_exec: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_exec
-.PHONY : test_exec
+pathtracer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pathtracer
+.PHONY : pathtracer
 
 # fast build rule for target.
-test_exec/fast:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/build
-.PHONY : test_exec/fast
+pathtracer/fast:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/build
+.PHONY : pathtracer/fast
 
 source/AABB.o: source/AABB.cpp.o
 
@@ -129,7 +129,7 @@ source/AABB.o: source/AABB.cpp.o
 
 # target to build an object file
 source/AABB.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/AABB.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/AABB.cpp.o
 .PHONY : source/AABB.cpp.o
 
 source/AABB.i: source/AABB.cpp.i
@@ -138,7 +138,7 @@ source/AABB.i: source/AABB.cpp.i
 
 # target to preprocess a source file
 source/AABB.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/AABB.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/AABB.cpp.i
 .PHONY : source/AABB.cpp.i
 
 source/AABB.s: source/AABB.cpp.s
@@ -147,7 +147,7 @@ source/AABB.s: source/AABB.cpp.s
 
 # target to generate assembly for a file
 source/AABB.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/AABB.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/AABB.cpp.s
 .PHONY : source/AABB.cpp.s
 
 source/Cylinder.o: source/Cylinder.cpp.o
@@ -156,7 +156,7 @@ source/Cylinder.o: source/Cylinder.cpp.o
 
 # target to build an object file
 source/Cylinder.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Cylinder.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o
 .PHONY : source/Cylinder.cpp.o
 
 source/Cylinder.i: source/Cylinder.cpp.i
@@ -165,7 +165,7 @@ source/Cylinder.i: source/Cylinder.cpp.i
 
 # target to preprocess a source file
 source/Cylinder.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Cylinder.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Cylinder.cpp.i
 .PHONY : source/Cylinder.cpp.i
 
 source/Cylinder.s: source/Cylinder.cpp.s
@@ -174,7 +174,7 @@ source/Cylinder.s: source/Cylinder.cpp.s
 
 # target to generate assembly for a file
 source/Cylinder.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Cylinder.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Cylinder.cpp.s
 .PHONY : source/Cylinder.cpp.s
 
 source/Dialectric.o: source/Dialectric.cpp.o
@@ -183,7 +183,7 @@ source/Dialectric.o: source/Dialectric.cpp.o
 
 # target to build an object file
 source/Dialectric.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Dialectric.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o
 .PHONY : source/Dialectric.cpp.o
 
 source/Dialectric.i: source/Dialectric.cpp.i
@@ -192,7 +192,7 @@ source/Dialectric.i: source/Dialectric.cpp.i
 
 # target to preprocess a source file
 source/Dialectric.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Dialectric.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Dialectric.cpp.i
 .PHONY : source/Dialectric.cpp.i
 
 source/Dialectric.s: source/Dialectric.cpp.s
@@ -201,7 +201,7 @@ source/Dialectric.s: source/Dialectric.cpp.s
 
 # target to generate assembly for a file
 source/Dialectric.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Dialectric.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Dialectric.cpp.s
 .PHONY : source/Dialectric.cpp.s
 
 source/Disk.o: source/Disk.cpp.o
@@ -210,7 +210,7 @@ source/Disk.o: source/Disk.cpp.o
 
 # target to build an object file
 source/Disk.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Disk.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Disk.cpp.o
 .PHONY : source/Disk.cpp.o
 
 source/Disk.i: source/Disk.cpp.i
@@ -219,7 +219,7 @@ source/Disk.i: source/Disk.cpp.i
 
 # target to preprocess a source file
 source/Disk.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Disk.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Disk.cpp.i
 .PHONY : source/Disk.cpp.i
 
 source/Disk.s: source/Disk.cpp.s
@@ -228,7 +228,7 @@ source/Disk.s: source/Disk.cpp.s
 
 # target to generate assembly for a file
 source/Disk.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Disk.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Disk.cpp.s
 .PHONY : source/Disk.cpp.s
 
 source/Helpers.o: source/Helpers.cpp.o
@@ -237,7 +237,7 @@ source/Helpers.o: source/Helpers.cpp.o
 
 # target to build an object file
 source/Helpers.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Helpers.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Helpers.cpp.o
 .PHONY : source/Helpers.cpp.o
 
 source/Helpers.i: source/Helpers.cpp.i
@@ -246,7 +246,7 @@ source/Helpers.i: source/Helpers.cpp.i
 
 # target to preprocess a source file
 source/Helpers.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Helpers.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Helpers.cpp.i
 .PHONY : source/Helpers.cpp.i
 
 source/Helpers.s: source/Helpers.cpp.s
@@ -255,7 +255,7 @@ source/Helpers.s: source/Helpers.cpp.s
 
 # target to generate assembly for a file
 source/Helpers.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Helpers.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Helpers.cpp.s
 .PHONY : source/Helpers.cpp.s
 
 source/Lambertian.o: source/Lambertian.cpp.o
@@ -264,7 +264,7 @@ source/Lambertian.o: source/Lambertian.cpp.o
 
 # target to build an object file
 source/Lambertian.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Lambertian.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o
 .PHONY : source/Lambertian.cpp.o
 
 source/Lambertian.i: source/Lambertian.cpp.i
@@ -273,7 +273,7 @@ source/Lambertian.i: source/Lambertian.cpp.i
 
 # target to preprocess a source file
 source/Lambertian.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Lambertian.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Lambertian.cpp.i
 .PHONY : source/Lambertian.cpp.i
 
 source/Lambertian.s: source/Lambertian.cpp.s
@@ -282,7 +282,7 @@ source/Lambertian.s: source/Lambertian.cpp.s
 
 # target to generate assembly for a file
 source/Lambertian.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Lambertian.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Lambertian.cpp.s
 .PHONY : source/Lambertian.cpp.s
 
 source/Main.o: source/Main.cpp.o
@@ -291,7 +291,7 @@ source/Main.o: source/Main.cpp.o
 
 # target to build an object file
 source/Main.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Main.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Main.cpp.o
 .PHONY : source/Main.cpp.o
 
 source/Main.i: source/Main.cpp.i
@@ -300,7 +300,7 @@ source/Main.i: source/Main.cpp.i
 
 # target to preprocess a source file
 source/Main.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Main.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Main.cpp.i
 .PHONY : source/Main.cpp.i
 
 source/Main.s: source/Main.cpp.s
@@ -309,7 +309,7 @@ source/Main.s: source/Main.cpp.s
 
 # target to generate assembly for a file
 source/Main.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Main.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Main.cpp.s
 .PHONY : source/Main.cpp.s
 
 source/Metal.o: source/Metal.cpp.o
@@ -318,7 +318,7 @@ source/Metal.o: source/Metal.cpp.o
 
 # target to build an object file
 source/Metal.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Metal.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Metal.cpp.o
 .PHONY : source/Metal.cpp.o
 
 source/Metal.i: source/Metal.cpp.i
@@ -327,7 +327,7 @@ source/Metal.i: source/Metal.cpp.i
 
 # target to preprocess a source file
 source/Metal.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Metal.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Metal.cpp.i
 .PHONY : source/Metal.cpp.i
 
 source/Metal.s: source/Metal.cpp.s
@@ -336,7 +336,7 @@ source/Metal.s: source/Metal.cpp.s
 
 # target to generate assembly for a file
 source/Metal.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Metal.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Metal.cpp.s
 .PHONY : source/Metal.cpp.s
 
 source/MovingSphere.o: source/MovingSphere.cpp.o
@@ -345,7 +345,7 @@ source/MovingSphere.o: source/MovingSphere.cpp.o
 
 # target to build an object file
 source/MovingSphere.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/MovingSphere.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o
 .PHONY : source/MovingSphere.cpp.o
 
 source/MovingSphere.i: source/MovingSphere.cpp.i
@@ -354,7 +354,7 @@ source/MovingSphere.i: source/MovingSphere.cpp.i
 
 # target to preprocess a source file
 source/MovingSphere.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/MovingSphere.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.i
 .PHONY : source/MovingSphere.cpp.i
 
 source/MovingSphere.s: source/MovingSphere.cpp.s
@@ -363,7 +363,7 @@ source/MovingSphere.s: source/MovingSphere.cpp.s
 
 # target to generate assembly for a file
 source/MovingSphere.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/MovingSphere.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.s
 .PHONY : source/MovingSphere.cpp.s
 
 source/Plane.o: source/Plane.cpp.o
@@ -372,7 +372,7 @@ source/Plane.o: source/Plane.cpp.o
 
 # target to build an object file
 source/Plane.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Plane.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Plane.cpp.o
 .PHONY : source/Plane.cpp.o
 
 source/Plane.i: source/Plane.cpp.i
@@ -381,7 +381,7 @@ source/Plane.i: source/Plane.cpp.i
 
 # target to preprocess a source file
 source/Plane.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Plane.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Plane.cpp.i
 .PHONY : source/Plane.cpp.i
 
 source/Plane.s: source/Plane.cpp.s
@@ -390,7 +390,7 @@ source/Plane.s: source/Plane.cpp.s
 
 # target to generate assembly for a file
 source/Plane.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Plane.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Plane.cpp.s
 .PHONY : source/Plane.cpp.s
 
 source/RandomNumbers.o: source/RandomNumbers.cpp.o
@@ -399,7 +399,7 @@ source/RandomNumbers.o: source/RandomNumbers.cpp.o
 
 # target to build an object file
 source/RandomNumbers.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/RandomNumbers.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o
 .PHONY : source/RandomNumbers.cpp.o
 
 source/RandomNumbers.i: source/RandomNumbers.cpp.i
@@ -408,7 +408,7 @@ source/RandomNumbers.i: source/RandomNumbers.cpp.i
 
 # target to preprocess a source file
 source/RandomNumbers.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/RandomNumbers.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.i
 .PHONY : source/RandomNumbers.cpp.i
 
 source/RandomNumbers.s: source/RandomNumbers.cpp.s
@@ -417,7 +417,7 @@ source/RandomNumbers.s: source/RandomNumbers.cpp.s
 
 # target to generate assembly for a file
 source/RandomNumbers.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/RandomNumbers.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.s
 .PHONY : source/RandomNumbers.cpp.s
 
 source/Sphere.o: source/Sphere.cpp.o
@@ -426,7 +426,7 @@ source/Sphere.o: source/Sphere.cpp.o
 
 # target to build an object file
 source/Sphere.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Sphere.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Sphere.cpp.o
 .PHONY : source/Sphere.cpp.o
 
 source/Sphere.i: source/Sphere.cpp.i
@@ -435,7 +435,7 @@ source/Sphere.i: source/Sphere.cpp.i
 
 # target to preprocess a source file
 source/Sphere.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Sphere.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Sphere.cpp.i
 .PHONY : source/Sphere.cpp.i
 
 source/Sphere.s: source/Sphere.cpp.s
@@ -444,7 +444,7 @@ source/Sphere.s: source/Sphere.cpp.s
 
 # target to generate assembly for a file
 source/Sphere.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Sphere.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Sphere.cpp.s
 .PHONY : source/Sphere.cpp.s
 
 source/Texture.o: source/Texture.cpp.o
@@ -453,7 +453,7 @@ source/Texture.o: source/Texture.cpp.o
 
 # target to build an object file
 source/Texture.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Texture.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Texture.cpp.o
 .PHONY : source/Texture.cpp.o
 
 source/Texture.i: source/Texture.cpp.i
@@ -462,7 +462,7 @@ source/Texture.i: source/Texture.cpp.i
 
 # target to preprocess a source file
 source/Texture.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Texture.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Texture.cpp.i
 .PHONY : source/Texture.cpp.i
 
 source/Texture.s: source/Texture.cpp.s
@@ -471,7 +471,7 @@ source/Texture.s: source/Texture.cpp.s
 
 # target to generate assembly for a file
 source/Texture.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Texture.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Texture.cpp.s
 .PHONY : source/Texture.cpp.s
 
 source/Utility.o: source/Utility.cpp.o
@@ -480,7 +480,7 @@ source/Utility.o: source/Utility.cpp.o
 
 # target to build an object file
 source/Utility.cpp.o:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Utility.cpp.o
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Utility.cpp.o
 .PHONY : source/Utility.cpp.o
 
 source/Utility.i: source/Utility.cpp.i
@@ -489,7 +489,7 @@ source/Utility.i: source/Utility.cpp.i
 
 # target to preprocess a source file
 source/Utility.cpp.i:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Utility.cpp.i
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Utility.cpp.i
 .PHONY : source/Utility.cpp.i
 
 source/Utility.s: source/Utility.cpp.s
@@ -498,7 +498,7 @@ source/Utility.s: source/Utility.cpp.s
 
 # target to generate assembly for a file
 source/Utility.cpp.s:
-	$(MAKE) -f CMakeFiles/test_exec.dir/build.make CMakeFiles/test_exec.dir/source/Utility.cpp.s
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Utility.cpp.s
 .PHONY : source/Utility.cpp.s
 
 # Help Target
@@ -509,7 +509,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_exec"
+	@echo "... pathtracer"
 	@echo "... source/AABB.o"
 	@echo "... source/AABB.i"
 	@echo "... source/AABB.s"
