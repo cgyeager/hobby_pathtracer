@@ -1,7 +1,6 @@
 #include "Utility.hpp"
 
-/*
-bool
+void
 SavePPM(const char * filename, glm::vec3 * buffer, const int width, const int height, bool gammaCorrectionOn)
 {
     FILE * fp = fopen(filename, "wb");
@@ -28,4 +27,3 @@ SavePPM(const char * filename, glm::vec3 * buffer, const int width, const int he
     }
     fclose(fp);
 }
-*/

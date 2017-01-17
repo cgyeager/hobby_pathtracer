@@ -1,0 +1,4 @@
+[  6%] Building CXX object CMakeFiles/test_exec.dir/source/Disk.cpp.o
+CMakeFiles/test_exec.dir/build.make:374: recipe for target 'CMakeFiles/test_exec.dir/source/Disk.cpp.o' failed
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/test_exec.dir/all' failed
+Makefile:83: recipe for target 'all' failed
