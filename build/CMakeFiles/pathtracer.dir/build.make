@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chris/Graphics/ptracer
+CMAKE_SOURCE_DIR = /home/chris/graphics/ptracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chris/Graphics/ptracer/build
+CMAKE_BINARY_DIR = /home/chris/graphics/ptracer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pathtracer.dir/depend.make
@@ -57,18 +57,42 @@ include CMakeFiles/pathtracer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pathtracer.dir/flags.make
 
+CMakeFiles/pathtracer.dir/source/BVH.cpp.o: CMakeFiles/pathtracer.dir/flags.make
+CMakeFiles/pathtracer.dir/source/BVH.cpp.o: ../source/BVH.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pathtracer.dir/source/BVH.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/BVH.cpp.o -c /home/chris/graphics/ptracer/source/BVH.cpp
+
+CMakeFiles/pathtracer.dir/source/BVH.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/BVH.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/BVH.cpp > CMakeFiles/pathtracer.dir/source/BVH.cpp.i
+
+CMakeFiles/pathtracer.dir/source/BVH.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/BVH.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/BVH.cpp -o CMakeFiles/pathtracer.dir/source/BVH.cpp.s
+
+CMakeFiles/pathtracer.dir/source/BVH.cpp.o.requires:
+
+.PHONY : CMakeFiles/pathtracer.dir/source/BVH.cpp.o.requires
+
+CMakeFiles/pathtracer.dir/source/BVH.cpp.o.provides: CMakeFiles/pathtracer.dir/source/BVH.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/BVH.cpp.o.provides.build
+.PHONY : CMakeFiles/pathtracer.dir/source/BVH.cpp.o.provides
+
+CMakeFiles/pathtracer.dir/source/BVH.cpp.o.provides.build: CMakeFiles/pathtracer.dir/source/BVH.cpp.o
+
+
 CMakeFiles/pathtracer.dir/source/Metal.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Metal.cpp.o: ../source/Metal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pathtracer.dir/source/Metal.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Metal.cpp.o -c /home/chris/Graphics/ptracer/source/Metal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pathtracer.dir/source/Metal.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Metal.cpp.o -c /home/chris/graphics/ptracer/source/Metal.cpp
 
 CMakeFiles/pathtracer.dir/source/Metal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Metal.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Metal.cpp > CMakeFiles/pathtracer.dir/source/Metal.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Metal.cpp > CMakeFiles/pathtracer.dir/source/Metal.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Metal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Metal.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Metal.cpp -o CMakeFiles/pathtracer.dir/source/Metal.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Metal.cpp -o CMakeFiles/pathtracer.dir/source/Metal.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Metal.cpp.o.requires:
 
@@ -83,16 +107,16 @@ CMakeFiles/pathtracer.dir/source/Metal.cpp.o.provides.build: CMakeFiles/pathtrac
 
 CMakeFiles/pathtracer.dir/source/Utility.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Utility.cpp.o: ../source/Utility.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pathtracer.dir/source/Utility.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Utility.cpp.o -c /home/chris/Graphics/ptracer/source/Utility.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pathtracer.dir/source/Utility.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Utility.cpp.o -c /home/chris/graphics/ptracer/source/Utility.cpp
 
 CMakeFiles/pathtracer.dir/source/Utility.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Utility.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Utility.cpp > CMakeFiles/pathtracer.dir/source/Utility.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Utility.cpp > CMakeFiles/pathtracer.dir/source/Utility.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Utility.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Utility.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Utility.cpp -o CMakeFiles/pathtracer.dir/source/Utility.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Utility.cpp -o CMakeFiles/pathtracer.dir/source/Utility.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Utility.cpp.o.requires:
 
@@ -105,18 +129,42 @@ CMakeFiles/pathtracer.dir/source/Utility.cpp.o.provides: CMakeFiles/pathtracer.d
 CMakeFiles/pathtracer.dir/source/Utility.cpp.o.provides.build: CMakeFiles/pathtracer.dir/source/Utility.cpp.o
 
 
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o: CMakeFiles/pathtracer.dir/flags.make
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o: ../source/PathTracer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o -c /home/chris/graphics/ptracer/source/PathTracer.cpp
+
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/PathTracer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/PathTracer.cpp > CMakeFiles/pathtracer.dir/source/PathTracer.cpp.i
+
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/PathTracer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/PathTracer.cpp -o CMakeFiles/pathtracer.dir/source/PathTracer.cpp.s
+
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.requires:
+
+.PHONY : CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.requires
+
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.provides: CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.provides.build
+.PHONY : CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.provides
+
+CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.provides.build: CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o
+
+
 CMakeFiles/pathtracer.dir/source/Texture.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Texture.cpp.o: ../source/Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pathtracer.dir/source/Texture.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Texture.cpp.o -c /home/chris/Graphics/ptracer/source/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pathtracer.dir/source/Texture.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Texture.cpp.o -c /home/chris/graphics/ptracer/source/Texture.cpp
 
 CMakeFiles/pathtracer.dir/source/Texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Texture.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Texture.cpp > CMakeFiles/pathtracer.dir/source/Texture.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Texture.cpp > CMakeFiles/pathtracer.dir/source/Texture.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Texture.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Texture.cpp -o CMakeFiles/pathtracer.dir/source/Texture.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Texture.cpp -o CMakeFiles/pathtracer.dir/source/Texture.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Texture.cpp.o.requires:
 
@@ -131,16 +179,16 @@ CMakeFiles/pathtracer.dir/source/Texture.cpp.o.provides.build: CMakeFiles/pathtr
 
 CMakeFiles/pathtracer.dir/source/Plane.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Plane.cpp.o: ../source/Plane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pathtracer.dir/source/Plane.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Plane.cpp.o -c /home/chris/Graphics/ptracer/source/Plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pathtracer.dir/source/Plane.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Plane.cpp.o -c /home/chris/graphics/ptracer/source/Plane.cpp
 
 CMakeFiles/pathtracer.dir/source/Plane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Plane.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Plane.cpp > CMakeFiles/pathtracer.dir/source/Plane.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Plane.cpp > CMakeFiles/pathtracer.dir/source/Plane.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Plane.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Plane.cpp -o CMakeFiles/pathtracer.dir/source/Plane.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Plane.cpp -o CMakeFiles/pathtracer.dir/source/Plane.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Plane.cpp.o.requires:
 
@@ -155,16 +203,16 @@ CMakeFiles/pathtracer.dir/source/Plane.cpp.o.provides.build: CMakeFiles/pathtrac
 
 CMakeFiles/pathtracer.dir/source/Main.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Main.cpp.o: ../source/Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pathtracer.dir/source/Main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Main.cpp.o -c /home/chris/Graphics/ptracer/source/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pathtracer.dir/source/Main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Main.cpp.o -c /home/chris/graphics/ptracer/source/Main.cpp
 
 CMakeFiles/pathtracer.dir/source/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Main.cpp > CMakeFiles/pathtracer.dir/source/Main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Main.cpp > CMakeFiles/pathtracer.dir/source/Main.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Main.cpp -o CMakeFiles/pathtracer.dir/source/Main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Main.cpp -o CMakeFiles/pathtracer.dir/source/Main.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Main.cpp.o.requires:
 
@@ -179,16 +227,16 @@ CMakeFiles/pathtracer.dir/source/Main.cpp.o.provides.build: CMakeFiles/pathtrace
 
 CMakeFiles/pathtracer.dir/source/Helpers.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Helpers.cpp.o: ../source/Helpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pathtracer.dir/source/Helpers.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Helpers.cpp.o -c /home/chris/Graphics/ptracer/source/Helpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pathtracer.dir/source/Helpers.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Helpers.cpp.o -c /home/chris/graphics/ptracer/source/Helpers.cpp
 
 CMakeFiles/pathtracer.dir/source/Helpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Helpers.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Helpers.cpp > CMakeFiles/pathtracer.dir/source/Helpers.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Helpers.cpp > CMakeFiles/pathtracer.dir/source/Helpers.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Helpers.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Helpers.cpp -o CMakeFiles/pathtracer.dir/source/Helpers.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Helpers.cpp -o CMakeFiles/pathtracer.dir/source/Helpers.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Helpers.cpp.o.requires:
 
@@ -203,16 +251,16 @@ CMakeFiles/pathtracer.dir/source/Helpers.cpp.o.provides.build: CMakeFiles/pathtr
 
 CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o: ../source/Lambertian.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o -c /home/chris/Graphics/ptracer/source/Lambertian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o -c /home/chris/graphics/ptracer/source/Lambertian.cpp
 
 CMakeFiles/pathtracer.dir/source/Lambertian.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Lambertian.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Lambertian.cpp > CMakeFiles/pathtracer.dir/source/Lambertian.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Lambertian.cpp > CMakeFiles/pathtracer.dir/source/Lambertian.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Lambertian.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Lambertian.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Lambertian.cpp -o CMakeFiles/pathtracer.dir/source/Lambertian.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Lambertian.cpp -o CMakeFiles/pathtracer.dir/source/Lambertian.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o.requires:
 
@@ -227,16 +275,16 @@ CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o.provides.build: CMakeFiles/pat
 
 CMakeFiles/pathtracer.dir/source/AABB.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/AABB.cpp.o: ../source/AABB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pathtracer.dir/source/AABB.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/AABB.cpp.o -c /home/chris/Graphics/ptracer/source/AABB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pathtracer.dir/source/AABB.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/AABB.cpp.o -c /home/chris/graphics/ptracer/source/AABB.cpp
 
 CMakeFiles/pathtracer.dir/source/AABB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/AABB.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/AABB.cpp > CMakeFiles/pathtracer.dir/source/AABB.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/AABB.cpp > CMakeFiles/pathtracer.dir/source/AABB.cpp.i
 
 CMakeFiles/pathtracer.dir/source/AABB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/AABB.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/AABB.cpp -o CMakeFiles/pathtracer.dir/source/AABB.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/AABB.cpp -o CMakeFiles/pathtracer.dir/source/AABB.cpp.s
 
 CMakeFiles/pathtracer.dir/source/AABB.cpp.o.requires:
 
@@ -251,16 +299,16 @@ CMakeFiles/pathtracer.dir/source/AABB.cpp.o.provides.build: CMakeFiles/pathtrace
 
 CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o: ../source/MovingSphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o -c /home/chris/Graphics/ptracer/source/MovingSphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o -c /home/chris/graphics/ptracer/source/MovingSphere.cpp
 
 CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/MovingSphere.cpp > CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/MovingSphere.cpp > CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.i
 
 CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/MovingSphere.cpp -o CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/MovingSphere.cpp -o CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.s
 
 CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o.requires:
 
@@ -275,16 +323,16 @@ CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o.provides.build: CMakeFiles/p
 
 CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o: ../source/RandomNumbers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o -c /home/chris/Graphics/ptracer/source/RandomNumbers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o -c /home/chris/graphics/ptracer/source/RandomNumbers.cpp
 
 CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/RandomNumbers.cpp > CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/RandomNumbers.cpp > CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.i
 
 CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/RandomNumbers.cpp -o CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/RandomNumbers.cpp -o CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.s
 
 CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o.requires:
 
@@ -299,16 +347,16 @@ CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o: ../source/Dialectric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o -c /home/chris/Graphics/ptracer/source/Dialectric.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o -c /home/chris/graphics/ptracer/source/Dialectric.cpp
 
 CMakeFiles/pathtracer.dir/source/Dialectric.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Dialectric.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Dialectric.cpp > CMakeFiles/pathtracer.dir/source/Dialectric.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Dialectric.cpp > CMakeFiles/pathtracer.dir/source/Dialectric.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Dialectric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Dialectric.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Dialectric.cpp -o CMakeFiles/pathtracer.dir/source/Dialectric.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Dialectric.cpp -o CMakeFiles/pathtracer.dir/source/Dialectric.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o.requires:
 
@@ -323,16 +371,16 @@ CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o.provides.build: CMakeFiles/pat
 
 CMakeFiles/pathtracer.dir/source/Sphere.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Sphere.cpp.o: ../source/Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pathtracer.dir/source/Sphere.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Sphere.cpp.o -c /home/chris/Graphics/ptracer/source/Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pathtracer.dir/source/Sphere.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Sphere.cpp.o -c /home/chris/graphics/ptracer/source/Sphere.cpp
 
 CMakeFiles/pathtracer.dir/source/Sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Sphere.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Sphere.cpp > CMakeFiles/pathtracer.dir/source/Sphere.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Sphere.cpp > CMakeFiles/pathtracer.dir/source/Sphere.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Sphere.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Sphere.cpp -o CMakeFiles/pathtracer.dir/source/Sphere.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Sphere.cpp -o CMakeFiles/pathtracer.dir/source/Sphere.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Sphere.cpp.o.requires:
 
@@ -347,16 +395,16 @@ CMakeFiles/pathtracer.dir/source/Sphere.cpp.o.provides.build: CMakeFiles/pathtra
 
 CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o: ../source/Cylinder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o -c /home/chris/Graphics/ptracer/source/Cylinder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o -c /home/chris/graphics/ptracer/source/Cylinder.cpp
 
 CMakeFiles/pathtracer.dir/source/Cylinder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Cylinder.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Cylinder.cpp > CMakeFiles/pathtracer.dir/source/Cylinder.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Cylinder.cpp > CMakeFiles/pathtracer.dir/source/Cylinder.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Cylinder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Cylinder.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Cylinder.cpp -o CMakeFiles/pathtracer.dir/source/Cylinder.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Cylinder.cpp -o CMakeFiles/pathtracer.dir/source/Cylinder.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o.requires:
 
@@ -371,16 +419,16 @@ CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o.provides.build: CMakeFiles/patht
 
 CMakeFiles/pathtracer.dir/source/Disk.cpp.o: CMakeFiles/pathtracer.dir/flags.make
 CMakeFiles/pathtracer.dir/source/Disk.cpp.o: ../source/Disk.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pathtracer.dir/source/Disk.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Disk.cpp.o -c /home/chris/Graphics/ptracer/source/Disk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pathtracer.dir/source/Disk.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/Disk.cpp.o -c /home/chris/graphics/ptracer/source/Disk.cpp
 
 CMakeFiles/pathtracer.dir/source/Disk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/Disk.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/Graphics/ptracer/source/Disk.cpp > CMakeFiles/pathtracer.dir/source/Disk.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/Disk.cpp > CMakeFiles/pathtracer.dir/source/Disk.cpp.i
 
 CMakeFiles/pathtracer.dir/source/Disk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/Disk.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/Graphics/ptracer/source/Disk.cpp -o CMakeFiles/pathtracer.dir/source/Disk.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/Disk.cpp -o CMakeFiles/pathtracer.dir/source/Disk.cpp.s
 
 CMakeFiles/pathtracer.dir/source/Disk.cpp.o.requires:
 
@@ -393,10 +441,36 @@ CMakeFiles/pathtracer.dir/source/Disk.cpp.o.provides: CMakeFiles/pathtracer.dir/
 CMakeFiles/pathtracer.dir/source/Disk.cpp.o.provides.build: CMakeFiles/pathtracer.dir/source/Disk.cpp.o
 
 
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o: CMakeFiles/pathtracer.dir/flags.make
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o: ../source/GeometryList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o -c /home/chris/graphics/ptracer/source/GeometryList.cpp
+
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pathtracer.dir/source/GeometryList.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/graphics/ptracer/source/GeometryList.cpp > CMakeFiles/pathtracer.dir/source/GeometryList.cpp.i
+
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pathtracer.dir/source/GeometryList.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/graphics/ptracer/source/GeometryList.cpp -o CMakeFiles/pathtracer.dir/source/GeometryList.cpp.s
+
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.requires:
+
+.PHONY : CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.requires
+
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.provides: CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.provides.build
+.PHONY : CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.provides
+
+CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.provides.build: CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o
+
+
 # Object files for target pathtracer
 pathtracer_OBJECTS = \
+"CMakeFiles/pathtracer.dir/source/BVH.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Metal.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Utility.cpp.o" \
+"CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Texture.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Plane.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Main.cpp.o" \
@@ -408,13 +482,16 @@ pathtracer_OBJECTS = \
 "CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Sphere.cpp.o" \
 "CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o" \
-"CMakeFiles/pathtracer.dir/source/Disk.cpp.o"
+"CMakeFiles/pathtracer.dir/source/Disk.cpp.o" \
+"CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o"
 
 # External object files for target pathtracer
 pathtracer_EXTERNAL_OBJECTS =
 
+pathtracer: CMakeFiles/pathtracer.dir/source/BVH.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Metal.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Utility.cpp.o
+pathtracer: CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Texture.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Plane.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Main.cpp.o
@@ -427,9 +504,10 @@ pathtracer: CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Sphere.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/source/Disk.cpp.o
+pathtracer: CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o
 pathtracer: CMakeFiles/pathtracer.dir/build.make
 pathtracer: CMakeFiles/pathtracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chris/Graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable pathtracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chris/graphics/ptracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable pathtracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pathtracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -437,8 +515,10 @@ CMakeFiles/pathtracer.dir/build: pathtracer
 
 .PHONY : CMakeFiles/pathtracer.dir/build
 
+CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/BVH.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Metal.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Utility.cpp.o.requires
+CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Texture.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Plane.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Main.cpp.o.requires
@@ -451,6 +531,7 @@ CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Dialectric.
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Sphere.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o.requires
 CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/Disk.cpp.o.requires
+CMakeFiles/pathtracer.dir/requires: CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o.requires
 
 .PHONY : CMakeFiles/pathtracer.dir/requires
 
@@ -459,6 +540,6 @@ CMakeFiles/pathtracer.dir/clean:
 .PHONY : CMakeFiles/pathtracer.dir/clean
 
 CMakeFiles/pathtracer.dir/depend:
-	cd /home/chris/Graphics/ptracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chris/Graphics/ptracer /home/chris/Graphics/ptracer /home/chris/Graphics/ptracer/build /home/chris/Graphics/ptracer/build /home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chris/graphics/ptracer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chris/graphics/ptracer /home/chris/graphics/ptracer /home/chris/graphics/ptracer/build /home/chris/graphics/ptracer/build /home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pathtracer.dir/depend
 

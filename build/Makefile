@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chris/Graphics/ptracer
+CMAKE_SOURCE_DIR = /home/chris/graphics/ptracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chris/Graphics/ptracer/build
+CMAKE_BINARY_DIR = /home/chris/graphics/ptracer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/Graphics/ptracer/build/CMakeFiles /home/chris/Graphics/ptracer/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/graphics/ptracer/build/CMakeFiles /home/chris/graphics/ptracer/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/Graphics/ptracer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/graphics/ptracer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ source/AABB.s: source/AABB.cpp.s
 source/AABB.cpp.s:
 	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/AABB.cpp.s
 .PHONY : source/AABB.cpp.s
+
+source/BVH.o: source/BVH.cpp.o
+
+.PHONY : source/BVH.o
+
+# target to build an object file
+source/BVH.cpp.o:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/BVH.cpp.o
+.PHONY : source/BVH.cpp.o
+
+source/BVH.i: source/BVH.cpp.i
+
+.PHONY : source/BVH.i
+
+# target to preprocess a source file
+source/BVH.cpp.i:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/BVH.cpp.i
+.PHONY : source/BVH.cpp.i
+
+source/BVH.s: source/BVH.cpp.s
+
+.PHONY : source/BVH.s
+
+# target to generate assembly for a file
+source/BVH.cpp.s:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/BVH.cpp.s
+.PHONY : source/BVH.cpp.s
 
 source/Cylinder.o: source/Cylinder.cpp.o
 
@@ -230,6 +257,33 @@ source/Disk.s: source/Disk.cpp.s
 source/Disk.cpp.s:
 	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/Disk.cpp.s
 .PHONY : source/Disk.cpp.s
+
+source/GeometryList.o: source/GeometryList.cpp.o
+
+.PHONY : source/GeometryList.o
+
+# target to build an object file
+source/GeometryList.cpp.o:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o
+.PHONY : source/GeometryList.cpp.o
+
+source/GeometryList.i: source/GeometryList.cpp.i
+
+.PHONY : source/GeometryList.i
+
+# target to preprocess a source file
+source/GeometryList.cpp.i:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/GeometryList.cpp.i
+.PHONY : source/GeometryList.cpp.i
+
+source/GeometryList.s: source/GeometryList.cpp.s
+
+.PHONY : source/GeometryList.s
+
+# target to generate assembly for a file
+source/GeometryList.cpp.s:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/GeometryList.cpp.s
+.PHONY : source/GeometryList.cpp.s
 
 source/Helpers.o: source/Helpers.cpp.o
 
@@ -365,6 +419,33 @@ source/MovingSphere.s: source/MovingSphere.cpp.s
 source/MovingSphere.cpp.s:
 	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.s
 .PHONY : source/MovingSphere.cpp.s
+
+source/PathTracer.o: source/PathTracer.cpp.o
+
+.PHONY : source/PathTracer.o
+
+# target to build an object file
+source/PathTracer.cpp.o:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o
+.PHONY : source/PathTracer.cpp.o
+
+source/PathTracer.i: source/PathTracer.cpp.i
+
+.PHONY : source/PathTracer.i
+
+# target to preprocess a source file
+source/PathTracer.cpp.i:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/PathTracer.cpp.i
+.PHONY : source/PathTracer.cpp.i
+
+source/PathTracer.s: source/PathTracer.cpp.s
+
+.PHONY : source/PathTracer.s
+
+# target to generate assembly for a file
+source/PathTracer.cpp.s:
+	$(MAKE) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/source/PathTracer.cpp.s
+.PHONY : source/PathTracer.cpp.s
 
 source/Plane.o: source/Plane.cpp.o
 
@@ -513,6 +594,9 @@ help:
 	@echo "... source/AABB.o"
 	@echo "... source/AABB.i"
 	@echo "... source/AABB.s"
+	@echo "... source/BVH.o"
+	@echo "... source/BVH.i"
+	@echo "... source/BVH.s"
 	@echo "... source/Cylinder.o"
 	@echo "... source/Cylinder.i"
 	@echo "... source/Cylinder.s"
@@ -522,6 +606,9 @@ help:
 	@echo "... source/Disk.o"
 	@echo "... source/Disk.i"
 	@echo "... source/Disk.s"
+	@echo "... source/GeometryList.o"
+	@echo "... source/GeometryList.i"
+	@echo "... source/GeometryList.s"
 	@echo "... source/Helpers.o"
 	@echo "... source/Helpers.i"
 	@echo "... source/Helpers.s"
@@ -537,6 +624,9 @@ help:
 	@echo "... source/MovingSphere.o"
 	@echo "... source/MovingSphere.i"
 	@echo "... source/MovingSphere.s"
+	@echo "... source/PathTracer.o"
+	@echo "... source/PathTracer.i"
+	@echo "... source/PathTracer.s"
 	@echo "... source/Plane.o"
 	@echo "... source/Plane.i"
 	@echo "... source/Plane.s"

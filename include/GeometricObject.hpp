@@ -25,10 +25,10 @@ public:
 	virtual ~GeometricObject() {}
 
 	virtual bool 
-	Hit(const Ray& ray, float tmin, float tmax, ShadeRecord& sr) const {};
+	Hit(const Ray& ray, float tmin, float tmax, ShadeRecord& sr) const = 0;
 	
 	virtual bool 
-	BoundingBox(float t0, float t1, AABB& box) const {};
+	BoundingBox(float t0, float t1, AABB& box) const = 0;
 	
 	void 
 	SetMaterial(Material * m) { matPtr = m; }

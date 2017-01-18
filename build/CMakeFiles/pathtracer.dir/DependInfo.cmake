@@ -4,20 +4,23 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/chris/Graphics/ptracer/source/AABB.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/AABB.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Cylinder.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Dialectric.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Disk.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Disk.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Helpers.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Helpers.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Lambertian.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Main.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Main.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Metal.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Metal.cpp.o"
-  "/home/chris/Graphics/ptracer/source/MovingSphere.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Plane.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Plane.cpp.o"
-  "/home/chris/Graphics/ptracer/source/RandomNumbers.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Sphere.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Sphere.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Texture.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Texture.cpp.o"
-  "/home/chris/Graphics/ptracer/source/Utility.cpp" "/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Utility.cpp.o"
+  "/home/chris/graphics/ptracer/source/AABB.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/AABB.cpp.o"
+  "/home/chris/graphics/ptracer/source/BVH.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/BVH.cpp.o"
+  "/home/chris/graphics/ptracer/source/Cylinder.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o"
+  "/home/chris/graphics/ptracer/source/Dialectric.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Dialectric.cpp.o"
+  "/home/chris/graphics/ptracer/source/Disk.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Disk.cpp.o"
+  "/home/chris/graphics/ptracer/source/GeometryList.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o"
+  "/home/chris/graphics/ptracer/source/Helpers.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Helpers.cpp.o"
+  "/home/chris/graphics/ptracer/source/Lambertian.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Lambertian.cpp.o"
+  "/home/chris/graphics/ptracer/source/Main.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Main.cpp.o"
+  "/home/chris/graphics/ptracer/source/Metal.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Metal.cpp.o"
+  "/home/chris/graphics/ptracer/source/MovingSphere.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/MovingSphere.cpp.o"
+  "/home/chris/graphics/ptracer/source/PathTracer.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o"
+  "/home/chris/graphics/ptracer/source/Plane.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Plane.cpp.o"
+  "/home/chris/graphics/ptracer/source/RandomNumbers.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/RandomNumbers.cpp.o"
+  "/home/chris/graphics/ptracer/source/Sphere.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Sphere.cpp.o"
+  "/home/chris/graphics/ptracer/source/Texture.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Texture.cpp.o"
+  "/home/chris/graphics/ptracer/source/Utility.cpp" "/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir/source/Utility.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

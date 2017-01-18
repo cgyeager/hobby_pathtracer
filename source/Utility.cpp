@@ -1,9 +1,9 @@
 #include "Utility.hpp"
 
 void
-SavePPM(const char * filename, glm::vec3 * buffer, const int width, const int height, bool gammaCorrectionOn)
+SavePPM(std::string &filename, glm::vec3 * buffer, const int width, const int height, bool gammaCorrectionOn)
 {
-    FILE * fp = fopen(filename, "wb");
+    FILE * fp = fopen(filename.c_str(), "wb");
 
     fprintf(fp, "P6\n%d %d\n255\n", width, height);
     for (int j = 0; j < height; j++)

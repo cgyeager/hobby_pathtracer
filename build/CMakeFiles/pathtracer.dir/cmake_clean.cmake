@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/pathtracer.dir/source/BVH.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Metal.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Utility.cpp.o"
+  "CMakeFiles/pathtracer.dir/source/PathTracer.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Texture.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Plane.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Main.cpp.o"
@@ -13,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pathtracer.dir/source/Sphere.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Cylinder.cpp.o"
   "CMakeFiles/pathtracer.dir/source/Disk.cpp.o"
+  "CMakeFiles/pathtracer.dir/source/GeometryList.cpp.o"
   "pathtracer.pdb"
   "pathtracer"
 )

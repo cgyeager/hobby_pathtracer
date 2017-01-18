@@ -1,3 +1,3 @@
-/home/chris/Graphics/ptracer/build/CMakeFiles/edit_cache.dir
-/home/chris/Graphics/ptracer/build/CMakeFiles/rebuild_cache.dir
-/home/chris/Graphics/ptracer/build/CMakeFiles/pathtracer.dir
+/home/chris/graphics/ptracer/build/CMakeFiles/edit_cache.dir
+/home/chris/graphics/ptracer/build/CMakeFiles/rebuild_cache.dir
+/home/chris/graphics/ptracer/build/CMakeFiles/pathtracer.dir
